@@ -4,7 +4,7 @@ import { User } from '../models/User.js';
 export const generateToken = (userId, role) => {
   return jwt.sign(
     { id: userId, role },
-    process.env.JWT_SECRET || 'revnation_super_secret_jwt_key_2026',
+    process.env.JWT_SECRET || '061b5bc2f91e6794ad4ee5b75a9732a29eb4324bd5affa83e3206f29f1d9f7989def30c053521081765f8f51f06d1d30',
     { expiresIn: '7d' }
   );
 };
