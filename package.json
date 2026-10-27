@@ -1,0 +1,12 @@
+{
+  "name": "revnation-root",
+  "version": "1.0.0",
+  "description": "RevNation Automotive Marketplace Monorepo Root",
+  "scripts": {
+    "install:all": "npm --prefix server install && npm --prefix client install",
+    "seed": "npm --prefix server run seed",
+    "test:server": "npm --prefix server run test",
+    "server": "npm --prefix server run dev",
+    "client": "npm --prefix client run dev"
+  }
+}
